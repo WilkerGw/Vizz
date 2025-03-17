@@ -1,0 +1,5 @@
+azul
+#007bff
+
+azul:hover
+#0056b3

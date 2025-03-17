@@ -1,0 +1,104 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../../public/images/casal.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  gap: 5rem;
+}
+.features > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  color: #eeeeee;
+  text-shadow: 0px 0px 20px #2e2e2e;
+  margin: .5rem;
+  text-decoration: underline 5px #ffdd56;
+}
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 1rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  min-width: 40rem;
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+  text-align: start;
+  padding: 0.5rem;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.services h1 {
+  color: #eeeeee;
+  font-family: "Archivo Black", sans-serif;
+  z-index: 1;
+  text-align: start;
+  width: 100%;
+}
+.services p {
+  z-index: 1;
+  color: #eeeeee;
+  opacity: 70%;
+}
+
+.span {
+  color: #ffdd56;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .service {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    height: auto;
+    padding-block: 1rem;
+  }
+  .services{
+    width: 100%;
+    justify-content: center;
+  }
+  .service{
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .features > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .service h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features > h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: start;
+  }
+  .services p {
+    font-size: .8rem;
+  }
+}

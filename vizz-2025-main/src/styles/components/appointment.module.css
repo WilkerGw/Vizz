@@ -1,0 +1,81 @@
+.appointment {
+  background-color: #2e2e2e;
+  padding: 40px 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointmentTitle {
+  font-size: 2rem;
+  color: #eeeeee;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.span__appointment {
+  color: #ffdd56;
+  text-decoration: underline 5px #ffdd56;
+}
+
+.appointmentSubtitle {
+  font-size: 1.2rem;
+  color: #eeeeee94;
+  margin-bottom: 20px;
+}
+
+.appointmentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+  
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.formInput[type="date"]:disabled {
+  background-color: #ddd;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

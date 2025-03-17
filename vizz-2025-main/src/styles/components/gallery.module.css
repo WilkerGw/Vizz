@@ -1,0 +1,132 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  position: relative;
+}
+
+.galleryTitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  color: #2e2e2e;
+  text-shadow: 0px 0px 20px #eeeeee;
+  margin: .5rem;
+  text-decoration: underline 5px #ffdd56;
+  width: 100%;
+}
+
+.categoryButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.categoryButton {
+  background-color: transparent;
+  color: #2e2e2e;
+  box-shadow: 0px 0px 5px #2e2e2e6e;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.categoryButton:hover {
+  background-color: #ffdd90;
+}
+
+.categoryButton.active {
+  background-color: #ffdd56;
+  color: #2e2e2e;
+}
+
+.mainImageContainer {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mainImage:hover {
+  transform: scale(1.05);
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+.thumbnail.activeThumbnail {
+  border: 3px solid #007bff;
+}
+
+@media (max-width: 768px) {
+
+  .gallery{
+    padding: 1rem;
+  }
+  .galleryTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .mainImageContainer {
+    max-width: 600px;
+  }
+
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryTitle {
+    font-size: 1.3rem;
+  }
+
+  .mainImageContainer {
+    max-width: 400px;
+  }
+  .mainImage{
+    width: 100%;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}

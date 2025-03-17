@@ -1,0 +1,176 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  position: relative;
+  height: 100vh;
+  background-image: url("../../../public/images/pessoas.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container__testimonials {
+  background-color: transparent;
+  width: 100%;
+}
+
+.galleryTitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  color: #eeeeee;
+  text-shadow: 0px 0px 20px #2e2e2e;
+  margin: 0.5rem;
+  text-decoration: underline 5px #ffdd56;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.subtitle {
+  z-index: 1;
+  color: #eee;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  margin: .5rem;
+}
+
+.container__testimonials {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  animation: marqueeAnimation 30s linear infinite;
+  width: fit-content; /* Garante que o .marquee tenha uma largura adequada */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.cardName {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffdd56;
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+.cardComment {
+  font-size: 1rem;
+  color: #eeeeee;
+  z-index: 1;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .testimonials {
+    height: auto;
+    padding-top: 7rem;
+  }
+
+  .galleryTitle {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    top: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .cardImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardName {
+    font-size: 1rem;
+  }
+
+  .cardComment {
+    font-size: 0.9rem;
+  }
+
+  .marquee {
+    animation-duration: 40s;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryTitle {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: .9rem;
+    top: 2rem;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .cardImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardName {
+    font-size: 0.9rem;
+  }
+
+  .cardComment {
+    font-size: 0.8rem;
+  }
+
+  .marquee {
+    animation-duration: 50s;
+  }
+}
+
+@media (max-width: 375px) {
+  .galleryTitle {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: .8rem;
+  }
+}

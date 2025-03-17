@@ -1,0 +1,105 @@
+.hero {
+  background-color: #2e2e2e;
+  color: #eeeeee;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+}
+
+.logo__hero {
+  width: 15rem;
+  filter: drop-shadow(0px 0px 2px #ffdd70);
+}
+
+.hero h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.span {
+  color: #ffdd56;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background: #007bff;
+  color: #eeeeee;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.ctaButton:hover {
+  background: #0056b3;
+  box-shadow: 0px 0px 5px #eeeeee;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .logo__hero {
+    width: 10rem;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    margin: 0;
+  }
+
+  .ctaButton{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .hero {
+    padding: .5rem .5rem 2rem .5rem;
+  }
+
+  .logo__hero {
+    width: 13rem;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+
+  .ctaButton{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .hero h2 {
+    font-size: 15px;
+  }
+  .hero p{
+
+    font-size: 10px;
+  }
+  .ctaButton{
+    font-size: 9px;
+  }
+  .hero{
+    padding: 25px 20px;
+  }
+}
