@@ -38,12 +38,12 @@
 }
 
 .categoryButton:hover {
-  background-color: #ffdd90;
+  background-color: #0056b3;
 }
 
 .categoryButton.active {
-  background-color: #ffdd56;
-  color: #2e2e2e;
+  background-color: #007bff;
+  color: #eeeeee;
 }
 
 .mainImageContainer {

@@ -7,18 +7,23 @@ import { useState } from 'react';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Função para fechar o menu ao clicar em um link
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <img src="/images/logo.png" alt="" className={styles.logo} />
+        <a href="#home"><img src="/images/logo.png" alt="" className={styles.logo} /></a>
         <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
-          <Link href="#home" className={styles.link}>Home</Link>
-          <Link href="#servicos" className={styles.link}>Servicos</Link>
-          <Link href="#destaques" className={styles.link}>Destaques</Link>
-          <Link href="#contato" className={styles.link}>Contato</Link>
-          <Link href="#agendamento" className={styles.link}>Agendamento</Link>
-          <Link href="#comprar" className={styles.link}>Comprar</Link>
-          <Link href="#depoimentos" className={styles.link}>Depoimentos</Link>
+          <Link href="#home" className={styles.link} onClick={closeMenu}>Home</Link>
+          <Link href="#servicos" className={styles.link} onClick={closeMenu}>Servicos</Link>
+          <Link href="#destaques" className={styles.link} onClick={closeMenu}>Destaques</Link>
+          <Link href="#contato" className={styles.link} onClick={closeMenu}>Contato</Link>
+          <Link href="#agendamento" className={styles.link} onClick={closeMenu}>Agendamento</Link>
+          <Link href="#comprar" className={styles.link} onClick={closeMenu}>Comprar</Link>
+          <Link href="#depoimentos" className={styles.link} onClick={closeMenu}>Depoimentos</Link>
         </div>
         <button
           className={styles.hamburger}
@@ -31,13 +36,13 @@ const Header = () => {
       </nav>
       {isOpen && (
         <div className={styles.mobileNav}>
-          <Link href="#home" className={styles.mobileLink}>Home</Link>
-          <Link href="#servicos" className={styles.mobileLink}>Servicos</Link>
-          <Link href="#destaques" className={styles.mobileLink}>Destaques</Link>
-          <Link href="#contato" className={styles.mobileLink}>Contato</Link>
-          <Link href="#agendamento" className={styles.mobileLink}>Agendamento</Link>
-          <Link href="#comprar" className={styles.mobileLink}>Comprar</Link>
-          <Link href="#depoimentos" className={styles.mobileLink}>Depoimentos</Link>
+          <Link href="#home" className={styles.mobileLink} onClick={closeMenu}>Home</Link>
+          <Link href="#servicos" className={styles.mobileLink} onClick={closeMenu}>Servicos</Link>
+          <Link href="#destaques" className={styles.mobileLink} onClick={closeMenu}>Destaques</Link>
+          <Link href="#contato" className={styles.mobileLink} onClick={closeMenu}>Contato</Link>
+          <Link href="#agendamento" className={styles.mobileLink} onClick={closeMenu}>Agendamento</Link>
+          <Link href="https://oticasvizz.lojavirtualnuvem.com.br/" className={styles.mobileLink} onClick={closeMenu} target='_blank'>Comprar</Link>
+          <Link href="#depoimentos" className={styles.mobileLink} onClick={closeMenu}>Depoimentos</Link>
         </div>
       )}
     </header>

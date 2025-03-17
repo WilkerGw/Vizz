@@ -1,5 +1,5 @@
 .contact {
-    background-image: url("../../../public/images/mulheres.jpg");
+    background-image: url("../../../public/images/mulheres.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -144,5 +144,20 @@
     .formContainer,
     .mapContainer {
       max-width: 50%;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .contactTitle {
+      font-size: 1.3rem;
+    }
+    .contactSubtitle {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .contact{
+      padding: 1rem 0rem;
     }
   }

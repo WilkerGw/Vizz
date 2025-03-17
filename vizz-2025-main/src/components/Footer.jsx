@@ -7,7 +7,6 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>Contato</h3>
             <p className={styles.footerText}>Av Do Oratório, 4869</p>
             <p className={styles.footerText}>
               Vila Industrial, São Paulo - SP, 03221-200
@@ -16,7 +15,6 @@ const Footer = () => {
             <p className={styles.footerText}>Email: oticasvizz@gmail.com</p>
           </div>
           <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>Links Úteis</h3>
             <ul className={styles.footerList}>
               <li className={styles.footerListItem}>
                 <a href="/" className={styles.footerLink}>
@@ -24,8 +22,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className={styles.footerListItem}>
-                <a href="#sobre" className={styles.footerLink}>
-                  Sobre
+                <a href="#agendamento" className={styles.footerLink}>
+                  Agendamento
                 </a>
               </li>
               <li className={styles.footerListItem}>
@@ -41,7 +39,6 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>Redes Sociais</h3>
             <div className={styles.socialIcons}>
               <a
                 href="https://facebook.com"
@@ -66,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>&copy; 2023 Ótica Visão Clara. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Ótica Vizz. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

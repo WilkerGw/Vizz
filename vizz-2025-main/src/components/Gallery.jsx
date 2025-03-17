@@ -8,20 +8,20 @@ const Gallery = () => {
 
   const categories = {
     sunglasses: [
-      "/images/sunglasses/sunglass1.jpg",
-      "/images/sunglasses/sunglass2.jpg",
-      "/images/sunglasses/sunglass3.jpg",
-      "/images/sunglasses/sunglass4.jpg",
-      "/images/sunglasses/sunglass5.jpg",
-      "/images/sunglasses/sunglass6.jpg",
+      "/images/sunglasses/sunglass1.webp",
+      "/images/sunglasses/sunglass2.webp",
+      "/images/sunglasses/sunglass3.webp",
+      "/images/sunglasses/sunglass4.webp",
+      "/images/sunglasses/sunglass5.webp",
+      "/images/sunglasses/sunglass6.webp",
     ],
     glasses: [
-      "/images/glasses/glass1.jpg",
-      "/images/glasses/glass2.jpg",
-      "/images/glasses/glass3.jpg",
-      "/images/glasses/glass4.jpg",
-      "/images/glasses/glass5.jpg",
-      "/images/glasses/glass6.jpg",
+      "/images/glasses/glass1.webp",
+      "/images/glasses/glass2.webp",
+      "/images/glasses/glass3.webp",
+      "/images/glasses/glass4.webp",
+      "/images/glasses/glass5.webp",
+      "/images/glasses/glass6.webp",
     ],
   };
 
@@ -47,7 +47,7 @@ const Gallery = () => {
           }`}
           onClick={() => setSelectedCategory("glasses")}
         >
-          Armações para Grau
+          Óculos de Grau
         </button>
       </div>
       <div className={styles.mainImageContainer}>

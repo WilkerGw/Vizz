@@ -6,7 +6,7 @@
   padding: 4rem 2rem;
   position: relative;
   height: 100vh;
-  background-image: url("../../../public/images/pessoas.jpg");
+  background-image: url("../../../public/images/pessoas.webp");
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
@@ -15,6 +15,7 @@
 .container__testimonials {
   background-color: transparent;
   width: 100%;
+  overflow: hidden;
 }
 
 .galleryTitle {
@@ -41,7 +42,6 @@
 
 .container__testimonials {
   width: 100vw;
-  overflow: hidden;
   position: relative;
 }
 

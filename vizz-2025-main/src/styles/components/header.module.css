@@ -68,6 +68,11 @@
   transform: translateY(-0.625rem) rotate(-45deg);
 }
 
+a:nth-child(6){
+  font-weight: bold;
+  color: #ffdd56;
+}
+
 @media (max-width: 768px) {
   .navLinks {
     display: none;
